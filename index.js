@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sportBtn = document.getElementById('sport-btn');
     const scienceTechBtn = document.getElementById('science-tech-btn');
     const mainNewsBtn = document.getElementById('main-news-btn');
+    const newsbtn = document.getElementById('news-btn');
     const rssTitle = document.getElementById('rss-title');
     const articlesList = document.getElementById('articles-list');
 
@@ -59,6 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
     mainNewsBtn.addEventListener('click', () => {
         currentRSS = 'https://ct24.ceskatelevize.cz/rss/tema/hlavni-zpravy-84313';
         rssTitle.textContent = 'ČT24 - Hlavní zprávy';
+        updateRSS();
+    });
+
+    newsbtn.addEventListener('click', () => {
+        currentRSS = 'https://www.irozhlas.cz/rss/irozhlas';
+        rssTitle.textContent = 'iRozhlas - zprávy';
         updateRSS();
     });
 
