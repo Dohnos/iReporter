@@ -5,8 +5,11 @@ body {
 }
 
 .container {
+    width: 100%;
     max-width: 800px;
     margin: 20px auto;
+    padding: 0 20px; 
+    box-sizing: border-box; 
 }
 
 h1 {
@@ -41,22 +44,29 @@ ul {
 
 .article {
     display: flex;
+    flex-direction: column; 
     margin-bottom: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    overflow: hidden; 
 }
 
 .article-image {
-    width: 350px;
-    height: 150px;
-    margin-right: 20px;
+    max-width: 40%; 
+    height: auto; 
+    margin-bottom: -30px; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .article-content {
     flex-grow: 1;
+    padding: 15px; 
 }
 
 a {
     text-decoration: none;
     color: #007bff;
+    display: block; 
 }
 
 a:hover {
