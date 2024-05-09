@@ -46,19 +46,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     sportBtn.addEventListener('click', () => {
         currentRSS = 'https://www.irozhlas.cz/rss/irozhlas/section/sport';
-        rssTitle.textContent = 'Články z RSS kanálu - Sport';
+        rssTitle.textContent = 'iRozhlas - Sport';
         updateRSS();
     });
 
     scienceTechBtn.addEventListener('click', () => {
         currentRSS = 'https://www.irozhlas.cz/rss/irozhlas/section/veda-technologie';
-        rssTitle.textContent = 'Články z RSS kanálu - Věda a technologie';
+        rssTitle.textContent = 'iRozhlas - Věda';
         updateRSS();
     });
 
     mainNewsBtn.addEventListener('click', () => {
         currentRSS = 'https://ct24.ceskatelevize.cz/rss/tema/hlavni-zpravy-84313';
-        rssTitle.textContent = 'Články z RSS kanálu - Hlavní zprávy';
+        rssTitle.textContent = 'ČT24 - Hlavní zprávy';
         updateRSS();
     });
 

@@ -22,8 +22,9 @@ h1 {
 }
 
 .rss-btn {
+    display: block; /* Make buttons appear vertically */
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 0 auto 10px; /* Center buttons horizontally and provide spacing */
     font-size: 16px;
     border: none;
     border-radius: 5px;
